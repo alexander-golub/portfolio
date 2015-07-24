@@ -1,0 +1,11 @@
+  var HeaderTop = $('.main_menu').offset().top;
+	var hh =HeaderTop + 600;
+	$(window).scroll(function(){
+		if( $(window).scrollTop() > HeaderTop ) {
+			if($(window).scrollTop() > hh) {
+				$('.main_menu').css({transition: '0.4s', background:'rgba(0, 0, 0, 0.6)'});
+						}
+		} else {
+			$('.main_menu').css({ background:'transparent'});
+		}
+	});
